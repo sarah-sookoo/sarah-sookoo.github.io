@@ -31,3 +31,10 @@ function addR(){  //add row
     row.appendChild(col);
     numRows++;
 }
+
+function removeR(){ //remove row
+    let rows;
+    rows = document.getElementsByClassName("row");
+    rows[0].remove();
+    numRows--;
+}
