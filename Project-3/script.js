@@ -1,6 +1,6 @@
 let numCols = 0;
 let numRows = 1;
-let total = numCols * numRows;
+//let total = numCols * numRows;
 let colorSelected = "";
 
 function createNode(){ // Creates a square
@@ -55,4 +55,14 @@ function removeC(){ //remove column
 function selectColor(){
     colorSelected = document.getElementById("selectedColorId").value;
     //console.log(colorSelected)
+}
+
+function fillU(){ //fill uncolored
+    let squares, i;
+    squares = document.getElementsByClassName("node");
+    let total = numCols * numRows;
+    for(i = 0; i < total; i++){
+        if(squares[i].style.backgroundColor == "white")
+            squares[i].style.backgroundColor = colorSelected;
+    }
 }
