@@ -1,5 +1,7 @@
 let numCols = 0;
 let numRows = 1;
+let total = numCols * numRows;
+let colorSelected = "";
 
 function createNode(){ // Creates a square
     let node = document.createElement("div")
@@ -48,4 +50,9 @@ function removeC(){ //remove column
     // let columns;
     // columns = document.getElementsByClassName("column");
     // columns[0].remove();
+}
+
+function selectColor(){
+    colorSelected = document.getElementById("selectedColorId").value;
+    //console.log(colorSelected)
 }
