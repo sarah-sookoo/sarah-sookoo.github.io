@@ -16,3 +16,18 @@ function addC(){ //add column
         col[i].appendChild(createNode());
     numCols++;
 }
+
+function addR(){  //add row
+    let row = document.createElement("div");
+    row.setAttribute("class", "row");
+    document.getElementById("grid").appendChild(row);
+
+    let col = document.createElement("div");
+    col.setAttribute("class", "column");
+
+    for(let i = 0; i < numCols; i++)
+        col.appendChild(createNode());
+
+    row.appendChild(col);
+    numRows++;
+}
