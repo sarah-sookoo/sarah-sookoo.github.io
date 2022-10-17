@@ -74,3 +74,11 @@ function fillAll(){
     for( i = 0; i < total; i++)
         squares[i].style.backgroundColor = colorSelected;
 }
+
+function clearAll(){
+    let squares, i, total;
+    squares = document.getElementsByClassName("node");
+    total = numCols * numRows;
+    for(i = 0; i < total; i++)
+        squares[i].style.backgroundColor = "white";
+}
