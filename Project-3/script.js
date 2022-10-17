@@ -82,3 +82,8 @@ function clearAll(){
     for(i = 0; i < total; i++)
         squares[i].style.backgroundColor = "white";
 }
+
+function changeSingleColor(){
+    event.target.style.backgroundColor = colorSelected;
+   // console.log("node was clicked")
+}
