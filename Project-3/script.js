@@ -38,3 +38,14 @@ function removeR(){ //remove row
     rows[0].remove();
     numRows--;
 }
+
+function removeC(){ //remove column
+    let columns;
+    columns = document.getElementsByClassName("column");
+    for(let i = 0; i < numCols; i++)
+        columns[i].removeChild(columns[i].childNodes[0]);
+    numCols--;
+    // let columns;
+    // columns = document.getElementsByClassName("column");
+    // columns[0].remove();
+}
