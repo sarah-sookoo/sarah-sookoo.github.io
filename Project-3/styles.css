@@ -1,0 +1,16 @@
+body{
+    align-items: center;
+}
+
+.row, .column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.node{
+    border: 1px solid black;
+    height: .5in;
+    width: .5in;
+}
