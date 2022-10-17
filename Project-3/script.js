@@ -9,3 +9,10 @@ function createNode(){ // Creates a square
     node.setAttribute('onclick','changeSingleColor();');
     return node;
 }
+
+function addC(){ //add column
+    let col = document.getElementsByClassName("column");
+    for(let i = 0; i < col.length; i++)
+        col[i].appendChild(createNode());
+    numCols++;
+}
