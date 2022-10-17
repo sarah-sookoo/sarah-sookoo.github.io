@@ -66,3 +66,11 @@ function fillU(){ //fill uncolored
             squares[i].style.backgroundColor = colorSelected;
     }
 }
+
+function fillAll(){
+    let squares, i; 
+    squares = document.getElementsByClassName("node");
+    let total = numCols * numRows;
+    for( i = 0; i < total; i++)
+        squares[i].style.backgroundColor = colorSelected;
+}
